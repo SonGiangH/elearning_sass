@@ -1,0 +1,54 @@
+footer {
+    @include styleText($color-gray-0,$fs-0,$fw-0 );
+
+    .footer__top {
+        width: 90%;
+        margin: $mg-4 auto;
+        ul {
+            height: 145px;
+            .nav-item {
+                flex-basis: 25%;  // set 4 item / 1 column cho flex
+                .nav-link {
+                    color: $color-blue-0;
+
+                    &.bold {
+                        font-weight: $fw-2;
+                    }
+                }
+            }
+        }
+
+        .btn-group {
+            display: block;
+
+            .button--dropup {
+                min-width: 150px;
+                box-shadow: none;
+                i {
+                    padding: 0 $pd-2;
+                }
+
+                &::after {
+                    margin-left: 30%;   // after la phan tu sau cai button -> là cái arrow 
+                }
+            }
+
+            .dropdown-menu {
+                font-size: $fs-0;
+            }
+        }
+    }
+
+    .footer__bottom {
+        width: 90%;
+        margin: $mg-3 - 2 auto;
+        img {
+            width: 110px;
+            margin-right: $mg-0 + 5;  
+        }
+
+        .nav-link {
+            @include styleText($color-blue-0, $fs-0, $fw-0);
+        }
+    }
+}

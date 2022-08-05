@@ -1,0 +1,12 @@
+.students {
+    padding: $mg-3 0;
+    .students__content {
+        width: 90%;
+        margin: auto;
+
+        h2 {
+            font-size: $fs-3;
+            margin-bottom: $mg-2;
+        }
+    }
+}

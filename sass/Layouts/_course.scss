@@ -1,0 +1,41 @@
+.courses {
+    margin: $mg-1 23px;
+    .courses__content {
+        width: 90%;
+        margin: auto;  // set width by % and margin auto, nó sẽ lùi vào 2 bên thay vì dùng container
+
+        
+
+        .courses__left {
+            background-color: $color-gray-1;
+            // height: 100%;
+            // width: 100%;    // size of child = parent size
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+                
+            h2 {
+                @include styleText($color-black-0,$fs-2 + 1 ,$fw-0)
+            }
+            
+        }
+        #myTab {
+            margin-bottom: $mg-1;
+            .nav-link {
+                @include styleText($color-black-0, $fs-1 ,$fw-0);
+
+                &:hover {
+                    border: 1px solid transparent;
+                    @include styleText($color-blue-0, $fs-1,$fw-0);
+                }
+
+                &.active {
+                    border: none;
+                    border-bottom: 5px solid $color-blue-0;
+                }
+            }
+        }
+    }
+
+        
+}
